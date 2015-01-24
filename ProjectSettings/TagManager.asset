@@ -3,6 +3,13 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - fondo1
+  - fondo2
+  - fondo3
+  - fondo4
+  - fondo5
+  - fondo6
+  - fondo7
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -40,4 +47,36 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: uno
+    userID: 1
+    uniqueID: 1657225643
+    locked: 0
+  - name: dos
+    userID: 2
+    uniqueID: 4231512121
+    locked: 0
+  - name: tres
+    userID: 3
+    uniqueID: 3350271885
+    locked: 0
+  - name: cuatro
+    userID: 4
+    uniqueID: 1016712911
+    locked: 0
+  - name: cinco
+    userID: 5
+    uniqueID: 2529626721
+    locked: 0
+  - name: seis
+    userID: 6
+    uniqueID: 2756488829
+    locked: 0
+  - name: siete
+    userID: 7
+    uniqueID: 372268819
+    locked: 0
+  - name: ocho
+    userID: 8
+    uniqueID: 1193294183
     locked: 0
