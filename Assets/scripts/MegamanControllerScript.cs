@@ -5,6 +5,8 @@ public class MegamanControllerScript : MonoBehaviour {
 
 	public float maxspeed = 10f;
 	Animator anim;
+	public Texture btnTexture;
+	public float speed;
 	bool faceRight = true;
 	public float Respawntime=1.0f;
 	public float acel=1;
@@ -43,12 +45,10 @@ public class MegamanControllerScript : MonoBehaviour {
 	{
 		if(gameObject.tag=="bullet")
 		{
-			this.gameObject.transform.position=new Vector2 (Screen.width/3,Screen.height/2);
+			//this.gameObject.transform.position=new Vector2 (Screen.width/3,Screen.height/2);
 			//healthScript.health -= 1;
 		}
 	}
-
-
 
 
 
