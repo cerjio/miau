@@ -26,13 +26,15 @@ public class Controles : MonoBehaviour {
 
 
 		while (GUI.RepeatButton(new Rect(5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4), btnTexture) ){
-			Input.GetKeyUp(KeyCode.LeftArrow);
+			player.transform.Translate(speed*Vector3.left*Time.deltaTime);
+			Debug.Log("izq");
 
 		}
 		
 		// Make the second button.
 		while (GUI.RepeatButton(new Rect((btnTexture.width/4)+5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4),btnTexture ) ){
-			Input.GetKeyUp(KeyCode.LeftArrow);
+			player.transform.Translate(speed*Vector3.right*Time.deltaTime);
+			Debug.Log("der");
 			
 		}
 	}
