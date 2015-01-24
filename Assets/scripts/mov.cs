@@ -11,7 +11,18 @@ public class mov : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		fondo = GameObject.FindGameObjectWithTag("fondo1").transform; 
+		try{
+			fondo = GameObject.FindGameObjectWithTag("fondo1").transform; 
+		}catch{
+
+		}
+	}
+
+
+	void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.tag == "treeHole")
+						Destroy (coll.gameObject);
+		
 	}
 	
 	// Update is called once per frame
@@ -21,14 +32,25 @@ public class mov : MonoBehaviour {
 		{
 			this.transform.Translate(Vector3.left * velocidadDespzamiento);
 
-
+			try{
 			fondo.Translate(Vector3.left * velocidadDespzamiento);
+			}catch{}
 			//
 		}
 
 		if (Input.GetKey(KeyCode.RightArrow))	
 		{
 			this.transform.Translate(Vector3.right * velocidadDespzamiento);	
+		}
+
+		if (Input.GetKey(KeyCode.UpArrow))	
+		{
+			this.transform.Translate(Vector3.up * velocidadDespzamiento);	
+		}
+
+		if (Input.GetKey(KeyCode.DownArrow))	
+		{
+			this.transform.Translate(Vector3.down * velocidadDespzamiento);	
 		}
 	}
 }
