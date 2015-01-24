@@ -47,20 +47,14 @@ public class MegamanControllerScript : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "bullet") {
 			//if(this.rigidbody.velocity.magnitude >0.1){
-				//Destroy (this.gameObject);
-			StartCoroutine(DieAndRespawn()); 
+			Destroy (this.gameObject);
+			//StartCoroutine(DieAndRespawn()); 
 			//}
 				
 		}
 		
 	}
-	IEnumerator DieAndRespawn() {
-		renderer.enabled = false;
-		yield return new WaitForSeconds(2.0f);
-		transform.position = respawnPosition.position;
-		renderer.enabled = true;
-	}
-	
+
 	
 	
 	
