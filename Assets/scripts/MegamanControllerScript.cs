@@ -14,12 +14,20 @@ public class MegamanControllerScript : MonoBehaviour {
 	public Transform respawnPosition;
 
 
+	// Controles
+	public GameObject player;
+	public float speed;
+
 
 	// Use this for initialization
 	void Start () {
 		//se llama al animator del personaje
 		anim = GetComponent<Animator> ();
 		//respawnPosition.position = GameObject.FindGameObjectWithTag ("Spawn").transform.position;
+
+		//Controles
+		player = GameObject.FindGameObjectWithTag ("Player");
+		speed = 5f;
 	}
 	
 	void FixedUpdate() {
@@ -60,6 +68,50 @@ public class MegamanControllerScript : MonoBehaviour {
 		
 	}
 
+
+	void OnGUI () {
+		
+		if (!btnTexture) {
+			
+			Debug.LogError("Please assign a texture on the inspector");
+			return;
+		}
+		
+		
+		
+		while (GUI.RepeatButton(new Rect(5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4), btnTexture) ){
+			player.transform.Translate(new Vector3(-(0.3f),0,0));
+			Debug.Log("izq");
+			if(faceRight)
+			{
+				Flip();
+				faceRight=false;
+			}
+			
+		}
+		
+		// Make the second button.
+		while (GUI.RepeatButton(new Rect((btnTexture.width/4)+5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4),btnTexture ) ){
+			player.transform.Translate(new Vector3((0.3f),0,0));
+			Debug.Log("der");
+			if(!faceRight)
+			{
+				Flip();
+				faceRight=true;
+			}
+		}
+		
+		// Make the third button.
+		while (GUI.RepeatButton(new Rect((btnTexture.width/4)+5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4),btnTexture ) ){
+			player.transform.Translate(new Vector3((0.3f),0,0));
+			Debug.Log("der");
+			if(!faceRight)
+			{
+				Flip();
+				faceRight=true;
+			}
+		}
+	}
 	
 	
 	
