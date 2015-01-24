@@ -19,11 +19,9 @@ public class MegamanControllerScript : MonoBehaviour {
 	void Start () {
 		//se llama al animator del personaje
 		anim = GetComponent<Animator> ();
-		respawnPosition.position = GameObject.FindGameObjectWithTag ("Spawn").transform.position;
+		//respawnPosition.position = GameObject.FindGameObjectWithTag ("Spawn").transform.position;
 	}
 	
-
-
 	void FixedUpdate() {
 		{
 			if (this.gameObject.transform.position.x >= 13)
