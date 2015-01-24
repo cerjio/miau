@@ -252,7 +252,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1427694037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxspeed: 10
+  Respawntime: 1
+  acel: 1
+  speedFactor: 5
 --- !u!1 &1443421309
 GameObject:
   m_ObjectHideFlags: 0

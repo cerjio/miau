@@ -18,7 +18,14 @@ public class MegamanControllerScript : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 	
-
+	// Update is called once per frame
+	void Update () {
+		
+		if (Input.GetKey(KeyCode.UpArrow))	
+		{
+			Application.LoadLevel("Escena7_Panal");
+		}
+	}
 
 	void FixedUpdate() {
 		float move = Input.GetAxis ("Horizontal");
@@ -46,10 +53,11 @@ public class MegamanControllerScript : MonoBehaviour {
 			this.gameObject.transform.position=new Vector2 (Screen.width/3,Screen.height/2);
 			//healthScript.health -= 1;
 		}
+
+		else if(gameObject.tag=="cambioEscena");//(gameObject.tag=="cambioEscena")
+		{
+			Application.LoadLevel("Escena7_Panal");
+		}
 	}
-
-
-
-
 
 }
