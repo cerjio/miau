@@ -10,11 +10,11 @@ TagManager:
   - fondo5
   - fondo6
   - fondo7
-  - treeHole
   - 
   - bullet
   - cambioEscena
   - CarroArriba1
+  - CarroAbajo
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

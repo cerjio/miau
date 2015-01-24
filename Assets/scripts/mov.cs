@@ -21,8 +21,7 @@ public class mov : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "treeHole")
-						Destroy (coll.gameObject);
-		
+						Destroy (coll.gameObject);	
 	}
 	
 	// Update is called once per frame
