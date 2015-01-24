@@ -42,14 +42,17 @@ public class MegamanControllerScript : MonoBehaviour {
 
 	// death from falling
 
-	void OnCollisionEnter(Collision collisionInfo)
-	{
-		print("Detected collision between " + gameObject.name + " and " + collisionInfo.collider.name);
-		print("There are " + collisionInfo.contacts.Length + " point(s) of contacts");
-		print("Their relative velocity is " + collisionInfo.relativeVelocity);
+	void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.tag == "bullet") {
+			if(this.rigidbody.velocity.magnitude >0.1){
+				Destroy (this.gameObject);
+			}
+				
+		}
+		
 	}
 	
-
+	
 	
 	
 	
