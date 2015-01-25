@@ -18,4 +18,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/Escena4_lata.unity
   - enabled: 1
+    path: Assets/scenes/Escena5_panal.unity
+  - enabled: 1
     path: Assets/scenes/sceneFinish.unity
