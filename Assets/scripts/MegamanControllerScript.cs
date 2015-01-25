@@ -10,12 +10,7 @@ public class MegamanControllerScript : MonoBehaviour {
 	public SpriteRenderer fondo2, fondo3, fondo4;
 
 	bool faceRight = true;
-	public float Respawntime=1.0f;
-	public float acel=1;
-	public float speedFactor=5;
-	public Transform respawnPosition;
-
-
+	
 	// Controles
 	public GameObject player;
 	public float speed;
