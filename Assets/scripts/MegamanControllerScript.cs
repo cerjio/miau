@@ -7,9 +7,10 @@ public class MegamanControllerScript : MonoBehaviour {
 	Animator anim;
 	public Texture btnTexture;
 
-	public GameObject fondo1, fondo1_1, fondo2, fondo3, fondo4, fondo6;
+	GameObject fondo1, fondo1_1, fondo2, fondo3, fondo4, fondo6;
 
 	bool faceRight = true;
+
 	
 	// Controles
 	public GameObject player;
@@ -35,12 +36,12 @@ public class MegamanControllerScript : MonoBehaviour {
 	}
 	
 	void FixedUpdate() {
-		{
+		/*{
 			if (this.gameObject.transform.position.x >= 13)
 				Application.LoadLevel ("Escena7_Panal");
 			if (this.gameObject.transform.position.x <= -14)
 				this.gameObject.transform.position = new Vector3 (-14, -1.4f);
-		}
+		}*/
 
 		float move = Input.GetAxis ("Horizontal");
 		anim.SetFloat ("Speed",Mathf.Abs(move));
@@ -84,14 +85,22 @@ public class MegamanControllerScript : MonoBehaviour {
 		
 		
 		while (GUI.RepeatButton(new Rect(5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4), btnTexture) ){
-			player.transform.Translate(new Vector3(-(0.05f),0,0));
 
-			fondo1.transform.Translate(new Vector3((0.01f),0,0));
-			fondo1_1.transform.Translate(new Vector3((0.01f),0,0));
-			fondo2.transform.Translate(new Vector3((0.02f),0,0));
-			fondo3.transform.Translate(new Vector3((0.03f),0,0));
-			fondo4.transform.Translate(new Vector3((0.04f),0,0));
-			fondo6.transform.Translate(new Vector3((0.06f),0,0));
+
+			if (player.transform.position.x >= -15 ){
+
+				//player.transform.position.x-= 0.04f;
+				player.transform.Translate(new Vector3(-(0.04f),0,0));
+			
+
+			fondo1.transform.Translate(new Vector3((0.02f),0,0));
+			fondo1_1.transform.Translate(new Vector3((0.02f),0,0));
+			fondo2.transform.Translate(new Vector3((0.03f),0,0));
+			fondo3.transform.Translate(new Vector3((0.045f),0,0));
+			fondo4.transform.Translate(new Vector3((0.07f),0,0));
+			fondo6.transform.Translate(new Vector3((0.15f),0,0));
+
+			}
 
 			Debug.Log("izq");
 			if(faceRight)
@@ -104,14 +113,18 @@ public class MegamanControllerScript : MonoBehaviour {
 		
 		// Make the second button.
 		while (GUI.RepeatButton(new Rect((btnTexture.width/4)+5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4),btnTexture ) ){
-			player.transform.Translate(new Vector3((0.05f),0,0));
 
-			fondo1.transform.Translate(new Vector3(-(0.01f),0,0));
-			fondo1_1.transform.Translate(new Vector3(-(0.01f),0,0));
-			fondo2.transform.Translate(new Vector3(-(0.02f),0,0));
-			fondo3.transform.Translate(new Vector3(-(0.03f),0,0));
-			fondo4.transform.Translate(new Vector3(-(0.04f),0,0));
-			fondo6.transform.Translate(new Vector3(-(0.06f),0,0));
+	
+			player.transform.Translate(new Vector3((0.04f),0,0));
+
+			fondo1.transform.Translate(new Vector3(-(0.02f),0,0));
+			fondo1_1.transform.Translate(new Vector3(-(0.02f),0,0));
+			fondo2.transform.Translate(new Vector3(-(0.03f),0,0));
+			fondo3.transform.Translate(new Vector3(-(0.045f),0,0));
+			fondo4.transform.Translate(new Vector3(-(0.07f),0,0));
+			fondo6.transform.Translate(new Vector3(-(0.15f),0,0));
+			
+
 
 			Debug.Log("der");
 			if(!faceRight)

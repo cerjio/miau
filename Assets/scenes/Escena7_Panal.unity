@@ -292,7 +292,7 @@ GameObject:
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!81 &1338738662
 AudioListener:
@@ -383,6 +383,7 @@ GameObject:
   - 58: {fileID: 1427694035}
   - 95: {fileID: 1427694036}
   - 114: {fileID: 1427694037}
+  - 114: {fileID: 1427694038}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -434,7 +435,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1427694031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.0499992, y: -1.80999994, z: 0}
+  m_LocalPosition: {x: -12.0500002, y: -1.80999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1338738666}
@@ -479,14 +480,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxspeed: 10
   btnTexture: {fileID: 2800000, guid: 91d9e4b92e0b84e8c90ab34a3352fe75, type: 3}
-  fondo1: {fileID: 0}
-  fondo1_1: {fileID: 0}
-  fondo2: {fileID: 1925052015}
-  fondo3: {fileID: 2088521697}
-  fondo4: {fileID: 1274613651}
-  fondo6: {fileID: 0}
   player: {fileID: 0}
   speed: 0
+--- !u!114 &1427694038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1427694031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fff2bad05a452544bd1f2f64bc48b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1925052014
 GameObject:
   m_ObjectHideFlags: 0

@@ -37,7 +37,8 @@ public class CambiarEscena : MonoBehaviour {
 			Application.LoadLevel("sceneFinish");
 		}
 		
-		else if(Application.loadedLevelName == "sceneFinish" && this.transform.position.x >= 10){
+		else if(Application.loadedLevelName == "Escena7_Panal" && this.transform.position.x >= -2){
+			Debug.Log("dgfyds");
 			Application.LoadLevel("Escena1_perro");
 		}
 	}
