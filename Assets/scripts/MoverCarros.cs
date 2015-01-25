@@ -6,12 +6,15 @@ public class MoverCarros : MonoBehaviour {
 	public float velocidad;
 	public int tipoV,pasos;
 	public float posIni;
+	public GameObject player;
+	public Rigidbody2D gc;
+
 	// Use this for initialization
 	void Start () {
 		posIni = 4;
 		tipoV = Random.Range (1, 6);
 		pasos = 0;
-		
+		player=GameObject.FindGameObjectWithTag("Player");
 		
 	}
 	
@@ -60,7 +63,14 @@ public class MoverCarros : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col)
 		
 	{
-		Destroy (col.gameObject);
+
+		if (col.gameObject.tag == "Player") {
+			Destroy (col.gameObject);
+			Application.LoadLevel("Escena1_perro");
+				}
+			
+
+				
 	}
 }
 
