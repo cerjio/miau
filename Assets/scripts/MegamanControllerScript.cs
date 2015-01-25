@@ -7,7 +7,7 @@ public class MegamanControllerScript : MonoBehaviour {
 	Animator anim;
 	public Texture btnTexture;
 
-	public SpriteRenderer fondo2, fondo3, fondo4;
+	public GameObject fondo1, fondo1_1, fondo2, fondo3, fondo4, fondo6;
 
 	bool faceRight = true;
 	
@@ -25,6 +25,13 @@ public class MegamanControllerScript : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		speed = 5f;
 
+		//fondo
+		fondo1 = GameObject.FindGameObjectWithTag("fondo1");
+		fondo1_1 = GameObject.FindGameObjectWithTag("fondo1_1");
+		fondo2 = GameObject.FindGameObjectWithTag("fondo2");
+		fondo3 = GameObject.FindGameObjectWithTag("fondo3");
+		fondo4 = GameObject.FindGameObjectWithTag("fondo4");
+		fondo6 = GameObject.FindGameObjectWithTag("fondo6");
 	}
 	
 	void FixedUpdate() {
@@ -79,9 +86,12 @@ public class MegamanControllerScript : MonoBehaviour {
 		while (GUI.RepeatButton(new Rect(5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4), btnTexture) ){
 			player.transform.Translate(new Vector3(-(0.05f),0,0));
 
-			fondo2.transform.Translate(new Vector3((0.01f),0,0));
-			fondo3.transform.Translate(new Vector3((0.02f),0,0));
+			fondo1.transform.Translate(new Vector3((0.01f),0,0));
+			fondo1_1.transform.Translate(new Vector3((0.01f),0,0));
+			fondo2.transform.Translate(new Vector3((0.02f),0,0));
+			fondo3.transform.Translate(new Vector3((0.03f),0,0));
 			fondo4.transform.Translate(new Vector3((0.04f),0,0));
+			fondo6.transform.Translate(new Vector3((0.06f),0,0));
 
 			Debug.Log("izq");
 			if(faceRight)
@@ -96,9 +106,12 @@ public class MegamanControllerScript : MonoBehaviour {
 		while (GUI.RepeatButton(new Rect((btnTexture.width/4)+5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4),btnTexture ) ){
 			player.transform.Translate(new Vector3((0.05f),0,0));
 
-			fondo2.transform.Translate(new Vector3(-(0.01f),0,0));
-			fondo3.transform.Translate(new Vector3(-(0.02f),0,0));
+			fondo1.transform.Translate(new Vector3(-(0.01f),0,0));
+			fondo1_1.transform.Translate(new Vector3(-(0.01f),0,0));
+			fondo2.transform.Translate(new Vector3(-(0.02f),0,0));
+			fondo3.transform.Translate(new Vector3(-(0.03f),0,0));
 			fondo4.transform.Translate(new Vector3(-(0.04f),0,0));
+			fondo6.transform.Translate(new Vector3(-(0.06f),0,0));
 
 			Debug.Log("der");
 			if(!faceRight)
