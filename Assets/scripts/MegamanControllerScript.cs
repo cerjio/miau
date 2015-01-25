@@ -118,7 +118,7 @@ public class MegamanControllerScript : MonoBehaviour {
 		
 		// Make the second button.
 		while (GUI.RepeatButton(new Rect((btnTexture.width/4)+5,Screen.height-(btnTexture.height/4),btnTexture.width/4,btnTexture.height/4),btnTexture ) ){
-
+			if(!player)
 	
 			player.transform.Translate(new Vector3((0.04f),0,0));
 
@@ -127,10 +127,14 @@ public class MegamanControllerScript : MonoBehaviour {
 			fondo2.transform.Translate(new Vector3(-(0.03f),0,0));
 			fondo3.transform.Translate(new Vector3(-(0.045f),0,0));
 			fondo4.transform.Translate(new Vector3(-(0.07f),0,0));
+
 			fondo6.transform.Translate(new Vector3(-(0.15f),0,0));
-
-			Items.transform.Translate(new Vector3(-(0.15f),0,0));
-
+			try
+			{
+				Items.transform.Translate(new Vector3(-(0.15f),0,0));
+			}
+			catch
+			{}
 
 			Debug.Log("der");
 			if(!faceRight)
