@@ -32,6 +32,8 @@ public class MegamanControllerScript : MonoBehaviour {
 	
 	void FixedUpdate() {
 		{
+			if (this.gameObject.transform.position.x >= 13)
+				Application.LoadLevel ("Escena7_Panal");
 			if (this.gameObject.transform.position.x <= -14)
 				this.gameObject.transform.position = new Vector3 (-14, -1.4f);
 		}
