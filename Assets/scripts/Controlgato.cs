@@ -59,6 +59,38 @@ public class Controlgato : MonoBehaviour {
 			scalar.x += .0023f;
 			scalar.y += .0023f;
 			this.transform.localScale=scalar;
+			if(this.transform.localScale.y<=1 && this.transform.localScale.y>.9)
+			{
+				
+				this.gameObject.renderer.sortingOrder=6;
+				
+			}
+			if(this.transform.localScale.y<=.9 && this.transform.localScale.y>.6)
+			{
+				
+				this.gameObject.renderer.sortingOrder=5;
+				
+			}
+			if(this.transform.localScale.y<=.6 && this.transform.localScale.y>.46)
+			{
+				
+				this.gameObject.renderer.sortingOrder=4;
+				
+			}
+			if(this.transform.localScale.y<=.46 && this.transform.localScale.y>.35)
+			{
+				
+				this.gameObject.renderer.sortingOrder=3;
+				
+			}
+			if(this.transform.localScale.y<=.35)
+			{
+				
+				this.gameObject.renderer.sortingOrder=2;
+				
+
+				
+			}
 		}
 	}
 }

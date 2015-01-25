@@ -20,13 +20,10 @@ TagManager:
   - gato5
   - honeycomb
   - treeHole
-<<<<<<< HEAD
-  - bullet2
-=======
   - carro1
   - carro2
   - carro3
->>>>>>> 305c5b05232203062b7f209c19a8840da6216220
+  - Item
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
