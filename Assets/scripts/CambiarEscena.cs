@@ -37,9 +37,5 @@ public class CambiarEscena : MonoBehaviour {
 			Application.LoadLevel("sceneFinish");
 		}
 
-		else if(Application.loadedLevelName == "sceneFinish" && this.transform.position.x >= 10){
-			Application.LoadLevel("Escena1_perro");
-		}
-
 	}
 }
