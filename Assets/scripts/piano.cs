@@ -13,12 +13,13 @@ public class piano : MonoBehaviour {
 	
 	}
 	void OnCollisionEnter2D(Collision2D coll) {
-		
-		//if(this.rigidbody.velocity.magnitude >0.1){
-		Destroy (this.gameObject);
-		
-		
-		
+		if (this.gameObject.tag == "bullet2") {
+			//if(this.rigidbody.velocity.magnitude >0.1){
+			Application.LoadLevel("Escena2_Atropellado");
+			//StartCoroutine(DieAndRespawn()); 
+			//}
+			
+		}
 		
 	}
 }
