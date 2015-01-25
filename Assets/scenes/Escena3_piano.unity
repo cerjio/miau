@@ -313,7 +313,6 @@ GameObject:
   - 58: {fileID: 1427694035}
   - 95: {fileID: 1427694036}
   - 114: {fileID: 1427694037}
-  - 114: {fileID: 1427694038}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -395,6 +394,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1427694037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,6 +417,7 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!114 &1427694038
 MonoBehaviour:
@@ -431,6 +432,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 >>>>>>> FETCH_HEAD
 >>>>>>> parent of b50493b... Revert "Merge branch 'master' of https://github.com/cerjio/miau"
+=======
+>>>>>>> parent of 8f293af... Merge branch 'master' of https://github.com/cerjio/miau
 --- !u!1 &1443421309
 GameObject:
   m_ObjectHideFlags: 0
