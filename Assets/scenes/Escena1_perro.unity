@@ -279,7 +279,6 @@ GameObject:
   - 58: {fileID: 2046325899}
   - 95: {fileID: 2046325898}
   - 114: {fileID: 2046325897}
-  - 114: {fileID: 2046325903}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -380,6 +379,7 @@ Transform:
   m_LocalScale: {x: 2.21049547, y: 2.21049571, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &2046325903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,3 +391,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fff2bad05a452544bd1f2f64bc48b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> FETCH_HEAD

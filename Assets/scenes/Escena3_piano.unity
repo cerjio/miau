@@ -309,7 +309,6 @@ GameObject:
   - 58: {fileID: 1427694035}
   - 95: {fileID: 1427694036}
   - 114: {fileID: 1427694037}
-  - 114: {fileID: 1427694038}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -391,6 +390,7 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1427694037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,20 +407,12 @@ MonoBehaviour:
   Respawntime: 1
   acel: 1
   speedFactor: 5
+<<<<<<< HEAD
+=======
   respawnPosition: {fileID: 0}
   player: {fileID: 0}
   speed: 0
---- !u!114 &1427694038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1427694031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fff2bad05a452544bd1f2f64bc48b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+>>>>>>> parent of 8f293af... Merge branch 'master' of https://github.com/cerjio/miau
 --- !u!1 &1443421309
 GameObject:
   m_ObjectHideFlags: 0
