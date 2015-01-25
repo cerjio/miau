@@ -411,6 +411,12 @@ MonoBehaviour:
   Respawntime: 1
   acel: 1
   speedFactor: 5
+<<<<<<< HEAD
+=======
+  respawnPosition: {fileID: 0}
+  player: {fileID: 0}
+  speed: 0
+>>>>>>> parent of 8f293af... Merge branch 'master' of https://github.com/cerjio/miau
 --- !u!1 &1443421309
 GameObject:
   m_ObjectHideFlags: 0
