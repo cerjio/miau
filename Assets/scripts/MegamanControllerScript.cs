@@ -7,7 +7,7 @@ public class MegamanControllerScript : MonoBehaviour {
 	Animator anim;
 	public Texture btnTexture;
 
-	GameObject fondo1, fondo1_1, fondo2, fondo3, fondo4, fondo6;
+	GameObject fondo1, fondo1_1, fondo2, fondo3, fondo4, fondo6, Items;
 
 	bool faceRight = true;
 
@@ -32,7 +32,10 @@ public class MegamanControllerScript : MonoBehaviour {
 		fondo2 = GameObject.FindGameObjectWithTag("fondo2");
 		fondo3 = GameObject.FindGameObjectWithTag("fondo3");
 		fondo4 = GameObject.FindGameObjectWithTag("fondo4");
-		fondo6 = GameObject.FindGameObjectWithTag("fondo6");
+		fondo6 = GameObject.FindGameObjectWithTag("fondo7");
+
+		Items = GameObject.FindGameObjectWithTag("Item");
+
 	}
 	
 	void FixedUpdate() {
@@ -99,6 +102,8 @@ public class MegamanControllerScript : MonoBehaviour {
 			fondo3.transform.Translate(new Vector3((0.045f),0,0));
 			fondo4.transform.Translate(new Vector3((0.07f),0,0));
 			fondo6.transform.Translate(new Vector3((0.15f),0,0));
+			
+			Items.transform.Translate(new Vector3((0.15f),0,0));
 
 			}
 
@@ -123,7 +128,8 @@ public class MegamanControllerScript : MonoBehaviour {
 			fondo3.transform.Translate(new Vector3(-(0.045f),0,0));
 			fondo4.transform.Translate(new Vector3(-(0.07f),0,0));
 			fondo6.transform.Translate(new Vector3(-(0.15f),0,0));
-			
+
+			Items.transform.Translate(new Vector3(-(0.15f),0,0));
 
 
 			Debug.Log("der");

@@ -33,8 +33,8 @@ public class CambiarEscena : MonoBehaviour {
 			Application.LoadLevel("Escena6_caminos");
 		}
 		
-		else if(Application.loadedLevelName == "Escena6_caminos" && this.transform.position.x >= 10){
-			Application.LoadLevel("sceneFinish");
+		else if(Application.loadedLevelName == "Escena6_caminos" && this.transform.position.x >= -2){
+			Application.LoadLevel("Escena7_Panal");
 		}
 		
 		else if(Application.loadedLevelName == "Escena7_Panal" && this.transform.position.x >= -2){

@@ -23,6 +23,7 @@ TagManager:
   - carro1
   - carro2
   - carro3
+  - Item
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
